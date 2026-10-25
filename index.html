@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+  <meta name="description" content="J.E. — Jovem Empreendedor: um laboratório público de ideias, conexões e aprendizagem para transformar curiosidade em ações concretas."/>
+  <meta name="theme-color" content="#050911"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="J.E. — Jovem Empreendedor | O próximo movimento"/>
+  <meta property="og:description" content="Ideias encontram pessoas. Explore uma experiência interativa sobre aprender, validar e empreender."/>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"/>
+  <link rel="stylesheet" href="assets/style.css"/>
+  <title>J.E. — Jovem Empreendedor | Ideias em movimento</title>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+  <div class="noise" aria-hidden="true"></div>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div class="loading-screen" id="intro" aria-hidden="true"><div class="loading-mark">J<span>.</span>E<span>.</span></div><div class="loading-bar"><span></span></div><p>EMBARQUE EM UMA IDEIA</p></div>
+  <header class="site-header" id="topo">
+    <a class="brand" href="#topo" aria-label="Jovem Empreendedor, início"><span class="brand-sign">J<span>·</span>E</span><span class="brand-name">JOVEM<br/>EMPREENDEDOR</span></a>
+    <nav class="desktop-nav" aria-label="Menu principal"><a href="#visao">A visão</a><a href="#metodo">O método</a><a href="#universo">Universo J.E.</a><a href="#laboratorio">Laboratório</a></nav>
+    <div class="nav-right"><span class="live-indicator"><i></i>EXPERIMENTO PÚBLICO / 2026</span><button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-controls="mobileMenu" aria-expanded="false"><span></span><span></span></button></div>
+  </header>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Menu móvel" hidden><a href="#visao">01 — A visão</a><a href="#metodo">02 — O método</a><a href="#universo">03 — Universo J.E.</a><a href="#laboratorio">04 — Laboratório</a><a href="cadernos/">05 — Amostra de Caderno</a></nav>
+  <main id="conteudo">
+    <section class="hero section-frame" id="inicio" aria-label="Apresentação do Jovem Empreendedor">
+      <div class="hero-coordinate" aria-hidden="true">CONEXÃO 01 / 04 <span>•</span> A IDEIA COMEÇA AQUI</div>
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="eyebrow-line"></span> BEM-VINDO À PRÓXIMA GERAÇÃO</div>
+        <h1>UMA IDEIA<br/>MUDA <em>QUANDO</em><br/>ENCONTRA <span>PESSOAS.</span></h1>
+        <p class="hero-description">Um espaço experimental para jovens que querem aprender, desenvolver ideias e criar conexões que realmente levam a algum lugar. Menos promessa. Mais experiência.</p>
+        <div class="hero-actions"><a class="btn btn-primary magnetic" href="#laboratorio">Testar minha ideia <span aria-hidden="true">↗</span></a><a class="btn btn-ghost" href="#visao">Descobrir o projeto <span aria-hidden="true">↓</span></a></div>
+      </div>
+      <div class="orbital" aria-hidden="true">
+        <div class="orbital-glow"></div><div class="orbit orbit-outer"><i class="orb-dot"></i></div><div class="orbit orbit-mid"><i class="orb-dot"></i></div><div class="orbit orbit-inner"><i class="orb-dot"></i></div>
+        <div class="orb-center"><span class="orb-core">J<span>.</span>E</span><span class="orb-caption">IDEIAS EM ÓRBITA</span></div><div class="orbit-tag orbit-tag-one">CONECTAR <span>↗</span></div><div class="orbit-tag orbit-tag-two">APRENDER <span>↗</span></div><div class="orbit-tag orbit-tag-three">CRIAR <span>↗</span></div>
+      </div>
+      <div class="hero-bottom"><div class="scroll-label"><span class="scroll-line"></span> DESLIZE PARA EXPLORAR</div><div class="hero-status">PLATAFORMA EM DESENVOLVIMENTO <b>●</b> IDEIAS ABERTAS</div></div>
+    </section>
+
+    <section class="manifesto section-pad" id="visao">
+      <div class="wrap manifesto-layout">
+        <div class="section-index reveal"><span>01 / MANIFESTO</span><span class="axis-line"></span><span>O PROPÓSITO</span></div>
+        <div class="manifesto-content reveal"><div class="micro">O J.E. NÃO É UM ATALHO</div><h2>O FUTURO NÃO SE CONSTRÓI <span>ASSISTINDO DE LONGE.</span></h2><p>Ter uma ideia é só o começo. Empreender também é entender problemas, conversar com pessoas, testar hipóteses, admitir erros e aprender a criar valor.</p><p>O Jovem Empreendedor explora justamente esse caminho. Não oferece sucesso garantido, renda fácil ou fórmulas milagrosas. Oferece instrumentos para quem quer sair da curiosidade e começar a agir com critério.</p><div class="quote-line"><span>“CONSTRUIR CONEXÕES ANTES DE BUSCAR ALCANCE.”</span><span class="mark-star">✳</span></div></div>
+      </div>
+    </section>
+
+    <section class="route section-pad" id="metodo">
+      <div class="wrap"><div class="section-top reveal"><div><div class="section-label">02 / O MÉTODO</div><h2>QUATRO MOVIMENTOS.<br/><span>UM CAMINHO REAL.</span></h2></div><p>Experimente as etapas do processo. Clique em cada movimento para revelar como uma ideia vira algo que pode ser testado.</p></div>
+      <div class="route-board reveal"><div class="route-steps" id="routeSteps" role="tablist" aria-label="Etapas do método J.E.">
+          <button class="route-step active" role="tab" aria-selected="true" aria-controls="routePanel" id="route-tab-0" data-step="0"><span class="step-num">01</span><span class="step-text">OBSERVAR</span><span class="step-icon">↗</span></button>
+          <button class="route-step" role="tab" aria-selected="false" aria-controls="routePanel" id="route-tab-1" data-step="1"><span class="step-num">02</span><span class="step-text">CONECTAR</span><span class="step-icon">↗</span></button>
+          <button class="route-step" role="tab" aria-selected="false" aria-controls="routePanel" id="route-tab-2" data-step="2"><span class="step-num">03</span><span class="step-text">EXPERIMENTAR</span><span class="step-icon">↗</span></button>
+          <button class="route-step" role="tab" aria-selected="false" aria-controls="routePanel" id="route-tab-3" data-step="3"><span class="step-num">04</span><span class="step-text">EVOLUIR</span><span class="step-icon">↗</span></button>
+        </div><div class="route-details" id="routePanel" role="tabpanel" aria-labelledby="route-tab-0" aria-live="polite"><div class="route-overline">MOVIMENTO 01 / 04</div><div class="route-glyph" id="routeGlyph" aria-hidden="true">◎</div><h3 id="routeTitle">Tudo começa com uma pergunta melhor.</h3><p id="routeDesc">Observe situações reais e encontre dificuldades que mereçam uma solução — sem presumir que todas as pessoas querem o que você imaginou.</p><div class="route-action"><strong id="routeChallenge">MISSÃO DE CAMPO</strong><span id="routeChallengeText">Converse com alguém e pergunte sobre a última vez que enfrentou o problema.</span></div></div></div>
+      </div>
+    </section>
+
+    <section class="universe section-pad" id="universo">
+      <div class="wrap"><div class="section-top reveal"><div><div class="section-label">03 / UNIVERSO J.E.</div><h2>EXPLORE<br/><span>AS POSSIBILIDADES.</span></h2></div><p>O projeto está em desenvolvimento. Estes são três caminhos que o J.E. pode testar com pessoas e instituições.</p></div>
+        <div class="universe-grid">
+          <a class="universe-card univ-community reveal" href="#laboratorio"><span class="card-top"><b>01 / REDE</b><span>↗</span></span><div class="community-graphic" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><svg viewBox="0 0 360 250" preserveAspectRatio="none"><path d="M63 126 L134 62 L225 135 L296 52 M63 126 L149 200 L225 135 L296 196 M134 62 L296 52"/></svg></div><div class="card-content"><div class="card-type">COMUNIDADE</div><h3>GENTE QUE ABRE CAMINHOS.</h3><p>Conversas, encontros e conexões com quem também quer construir.</p><span class="card-more">Começar pelo laboratório <span>→</span></span></div></a>
+          <a class="universe-card univ-learning reveal" href="cadernos/"><span class="card-top"><b>02 / CONHECIMENTO</b><span>↗</span></span><div class="book-graphic" aria-hidden="true"><div class="bk bk3">ELITE</div><div class="bk bk2">MÉDIO</div><div class="bk bk1">SIMPLES <span>↗</span></div></div><div class="card-content"><div class="card-type">CADERNOS DE DOMÍNIO</div><h3>APRENDER PARA USAR.</h3><p>Materiais de estudo que combinam explicação, prática e recuperação da memória.</p><span class="card-more">Abrir uma amostra <span>→</span></span></div></a>
+          <a class="universe-card univ-experiment reveal" href="#laboratorio"><span class="card-top"><b>03 / EXPERIMENTO</b><span>↗</span></span><div class="lab-graphic" aria-hidden="true"><div class="lab-arc arc1"></div><div class="lab-arc arc2"></div><div class="lab-arc arc3"></div><span class="lab-point">J·E</span></div><div class="card-content"><div class="card-type">VALIDAÇÃO DE IDEIAS</div><h3>MENOS ACHISMO. MAIS TESTE.</h3><p>Transforme uma hipótese em uma conversa real e um próximo passo verificável.</p><span class="card-more">Experimentar agora <span>→</span></span></div></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="lab-section section-pad" id="laboratorio">
+      <div class="wrap"><div class="section-top reveal"><div><div class="section-label">04 / LABORATÓRIO ABERTO</div><h2>SUA IDEIA É UMA HIPÓTESE.<br/><span>VAMOS TESTAR?</span></h2></div><p>Um exercício gratuito de reflexão, sem cadastro e sem envio de dados. Preencha os campos e gere sua primeira missão.</p></div>
+        <div class="lab-console reveal"><div class="console-top"><div><span class="console-light"></span> SISTEMA J.E. / SIMULAÇÃO 001</div><span>LOCAL · SEM SERVIDOR</span></div><div class="console-main"><form id="ideaForm" class="console-form" autocomplete="off"><label for="problem">01 / Qual problema você quer resolver?<textarea id="problem" maxlength="260" rows="3" placeholder="Ex.: Jovens com boas ideias não sabem onde encontrar parceiros." required></textarea></label><label for="audience">02 / Quem vive esse problema?<input id="audience" maxlength="110" placeholder="Ex.: estudantes de cursos técnicos" required/></label><label for="solution">03 / Que solução você imagina?<textarea id="solution" maxlength="260" rows="3" placeholder="Ex.: encontros para conectar jovens empreendedores." required></textarea></label><button class="btn btn-primary" type="submit">Gerar minha primeira missão <span>↗</span></button><div class="data-note">Seus textos ficam apenas nesta página. Nada é enviado para a Nexus, J.E. ou terceiros.</div></form><div class="console-output" id="labOutput" aria-live="polite"><div class="output-header">RELATÓRIO DE EXPLORAÇÃO <span id="outputStatus">AGUARDANDO IDEIA</span></div><div id="outputBody" class="output-body"><div class="waiting-pulse"><i></i><i></i><i></i></div><h3>AINDA NÃO HÁ UMA MISSÃO.</h3><p>Descreva uma ideia para receber perguntas de validação, uma mensagem inicial e critérios de evidência. Não é uma previsão de sucesso.</p></div></div></div></div>
+      </div>
+    </section>
+
+    <section class="belief section-pad"><div class="wrap belief-inner reveal"><span class="section-label">A TESE</span><p>VOCÊ NÃO PRECISA<br/>TER TUDO PRONTO.<br/><em>PRECISA DESCOBRIR</em><br/>O PRÓXIMO MOVIMENTO.</p><div class="belief-moon" aria-hidden="true"></div></div></section>
+
+    <section class="final-cta section-pad" id="explorar"><div class="wrap final-inner reveal"><div><div class="section-label">UMA ÚLTIMA COISA</div><h2>O CONHECIMENTO<br/>COMEÇA <span>EM AÇÃO.</span></h2><p>Continue explorando uma amostra interativa de estudo ou volte ao laboratório para colocar uma ideia à prova.</p><div class="hero-actions"><a class="btn btn-primary" href="cadernos/">Abrir Caderno experimental <span>↗</span></a><a class="btn btn-ghost" href="#laboratorio">Testar uma ideia <span>↑</span></a></div></div><div class="footer-graphic" aria-hidden="true">J<span>.</span>E<span>.</span></div></div></section>
+  </main>
+  <footer class="footer"><div class="wrap footer-grid"><div class="footer-logo">J<span>.</span>E<span>.</span><small>JOVEM EMPREENDEDOR</small></div><div class="footer-note"><b>UM PROJETO EM CONSTRUÇÃO.</b><p>Este site é um protótipo público de apresentação e estudo. Comunidade, produtos e parcerias são ideias em validação. Nenhuma venda, resultado ou parceria é presumida.</p></div><div class="footer-right"><a href="#topo">VOLTAR AO TOPO ↑</a><span>BRASIL · 2026 / VERSÃO EXPERIMENTAL</span></div></div></footer>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
